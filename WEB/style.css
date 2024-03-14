@@ -1,0 +1,43 @@
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: black;
+    color: goldenrod;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 32px;
+    width: auto;
+}
+
+.subtitulo{
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.divisoes{
+    margin-left: 20px;
+    padding: 8px;
+}
+li{
+    list-style-type: none;
+}
+
+img{
+    width: 20vw;
+}
+
+.formulario{
+    text-align: center;
+    
+}
+input{
+    width: 40%;
+    height: 20px;
+}
+
+button{
+    margin: 16px;
+}
