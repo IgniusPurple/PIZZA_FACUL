@@ -1,56 +1,86 @@
-<!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="stylesheet" href="style.css" media="screen">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Pizzaria Buona</title>
 </head>
-
 <body>
-    <h1 class="titulo">Buona Pizza</h1>
 
-    <h2 class="subtitulo">Cardápio</h2>
+    <div class="divisao-quem-somos">
+        <h1 class="titulo">Buona Pizza</h1>
+        <h2 class="tituloDivisao">Quem somos</h2>
+        <p class="paragrafo">A Pizzaria Buona Pizza abriu as portas em 1910, fundada pelo pizzaiolo Carmino Corvino quando este veio morar no Brasil, no tradicional bairro paulistano conhecido como Brás.</p>
+    </div>
 
-    <div class="divisoes">
+    <div class="divisao-pizzas">
+        <h2 class="subtitulo">Cardápio</h2>
         <h3 class="tituloDivisao">Pizzas</h3>
-
         <ul class="pizza">
             <li class="pizzas">
-                <p class="paragrafo">Calabresa</p>
-                <p class="paragrafo">Molho, Mussarela, Calabresa, Cebola, Azeitona e Orégano</p>
-                <p class="paragrafo">R$ 49.00</p>
-                <img src="pizza.jpeg" alt="pizza de calabresa">
+                <p class="paragrafo"><strong>Calabresa</strong></p>
+                <ul>
+                    <li>
+                        <p class="paragrafo">Molho, Mussarela, Calabresa, Cebola, Azeitona e Orégano</p>
+                    </li>
+                    <li>
+                        <p class="paragrafo">R$ 49.00</p>
+                    </li>
+                    <li>
+                        <img src="./assets/pizza.jpeg" alt="pizza de calabresa">
+                    </li>
+                </ul>
             </li>
             <li class="pizzas">
-                <p class="paragrafo">Quatro queijos</p>
-                <p class="paragrafo">Molho, Mussarela, Provolone, Parmesão, Gorgonzola, Tomate, Azeitona e Orégano</p>
-                <p class="paragrafo">R$ 52.00</p>
-                <img src="pizzaquatroqueijos.jpeg" alt="pizza de quatro queijos">
+                <p class="paragrafo"><strong>Quatro queijos</strong></p>
+                <ul>
+                    <li>
+                        <p class="paragrafo">Molho, Mussarela, Provolone, Parmesão, Gorgonzola, Tomate, Azeitona e Orégano</p>
+                    </li>
+                    <li>
+                        <p class="paragrafo">R$ 52.00</p>
+                    </li>
+                    <li>
+                        <img src="./assets/pizzaquatroqueijos.jpeg" alt="pizza de quatro queijos">
+                    </li>
+                </ul>
             </li>
             <li class="pizzas">
-                <p class="paragrafo">Italiana</p>
-                <p class="paragrafo">Molho, Mussarela, Catupiry, Salaminho, Azeitona e Orégano</p>
-                <p class="paragrafo">R$ 59.99</p>
-                <img src="pizzaitaliana.jpeg" alt="pizza italiana">
+                <p class="paragrafo"><strong>Italiana</strong></p>
+                <ul>
+                    <li>
+                        <p class="paragrafo">Molho, Mussarela, Catupiry, Salaminho, Azeitona e Orégano</p>
+                    </li>
+                    <li>
+                        <p class="paragrafo">R$ 59.99</p>
+                    </li>
+                    <li>
+                        <img src="./assets/pizzaitaliana.jpeg" alt="pizza italiana">
+                    </li>
+                </ul>
             </li>
             <li class="pizzas">
-                <p class="paragrafo">Presunto</p>
-                <p class="paragrafo">Molho, Mussarela, Prersunto, Tomate, Azeitona e Orégano</p>
-                <p class="paragrafo">R$ 51.00</p>
-                <img src="pizzapresunto.jpg" alt="pizza de presunto">
-                
+                <p class="paragrafo"><strong>Presunto</strong></p>
+                <ul>
+                    <li>
+                        <p class="paragrafo">Molho, Mussarela, Presunto, Tomate, Azeitona e Orégano</p>
+                    </li>
+                    <li>
+                        <p class="paragrafo">R$ 51.00</p>
+                    </li>
+                    <li>
+                        <img src="./assets/pizzapresunto.jpg" alt="pizza de presunto">
+                    </li>
+                </ul>
             </li>
         </ul>
     </div>
-    <div class="divisoes">
 
+    <div class="divisao-bebidas">
         <h3 class="tituloDivisao">Bebidas</h3>
-
         <ul class="bebida">
             <li class="bebidas">
                 <p class="paragrafo">Coca-Cola 1,5L</p>
@@ -79,20 +109,6 @@
         </ul>
     </div>
 
-    <div class="divisoes">Quem somos
-
-        <p class="paragrafo">A Pizzaria Buonna Pizza abriu as portas em 1910, fundada pelo pizzaiolo Carmino Corvino
-            quando este veio morar no Brasil, no tradicional bairro paulistano conhecido como Brás.</p>
-    </div>
-
-    <div class="divisoes">
-        <h3 class="tituloDivisao">Contato</h3>
-
-        <ul>
-            <li class="contato">WhatsApp (11)97777-7777</li>
-            <li class="contato">Instagram @buonnapizza</li>
-        </ul>
-    </div>
     <form class="formulario">
         <h2 class="subtitulo">Reserve o seu pedido</h2>
         <div class="formularioDivisao">
@@ -111,11 +127,17 @@
             <p class="paragrafo">Pedido:</p>
             <input type="text" placeholder="Qual seu pedido" id="pedido">
         </div>
-
         <button type="submit">Enviar pedido</button>
     </form>
 
 
-</body>
+    <div class="divisao-contato">
+        <h3 class="tituloDivisao">Contato</h3>
+        <ul>
+            <li class="contato">WhatsApp (11)97777-7777</li>
+            <li class="contato">Instagram @buonnapizza</li>
+        </ul>
+    </div>
 
+</body>
 </html>
